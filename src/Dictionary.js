@@ -6,11 +6,12 @@ export default function Dictionary() {
   let [keyword, setKeyword] = useState("");
 
   function handleResponse(response) {
-    console.log(response.data[0]);
+    console.log(response.data);
   }
 
   function search(event) {
-    let apiUrl = `https://api.shecodes.io/dictionary/v1/define?${keyword}`;
+    const apiKey = "fbef01f4et1b02o0d25c27210a43ef3f";
+    let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${keyword}&key=${apiKey}`;
     axios.get(apiUrl).then(handleResponse);
 
     event.preventDefault();
