@@ -13,7 +13,15 @@ export default function App() {
           <Dictionary />
         </main>
         <footer className="footer">
-          <small>Codded by Neggin Hariri</small>
+          <small>
+            This app is codded by Neggin Hariri and is open-sourced on {""}
+            <a
+              href="https://github.com/Neggin-h/dictionary-project.git"
+              target="-blank"
+            >
+              GitHub
+            </a>
+          </small>
         </footer>
       </div>
     </div>
